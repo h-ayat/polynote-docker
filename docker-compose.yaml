@@ -3,7 +3,7 @@ version: '3.0'
 services:
   polynote:
     build: .
-    image: test
+    image: hoayat/polynote
     volumes:
       - "./data:/data"
     ports:
