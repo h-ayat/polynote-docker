@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  polynote:
+    build: .
+    image: test
+    volumes:
+      - "./data:/data"
+    ports:
+      - "8000:8000"
+
