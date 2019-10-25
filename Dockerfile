@@ -10,6 +10,10 @@ RUN pip3 install jep jedi pyspark virtualenv \
   && tar zxvf polynote-dist.tar.gz \
   && rm polynote-dist.tar.gz
 ADD config.yml /opt/polynote/
+
 EXPOSE 8000
 WORKDIR /opt/polynote
 CMD ["sh", "-c", "./polynote"]
+
+LABEL maintainer="S.H.Ayat, h.ayat@sanjagh.pro"
+
