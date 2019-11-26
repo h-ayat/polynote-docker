@@ -5,7 +5,7 @@ services:
     build: .
     image: hoayat/polynote
     volumes:
-      - "./data:/data"
+      - "./data/polynote:/data"
     ports:
       - "8000:8000"
 
